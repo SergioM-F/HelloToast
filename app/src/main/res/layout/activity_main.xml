@@ -8,45 +8,39 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tituloText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="#363FF4"
-        android:gravity="center"
-        android:text="TOAST"
-        android:textColor="#FFFFFF"
-        android:textSize="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.026" />
-
-    <TextView
         android:id="@+id/textContador"
         android:layout_width="56dp"
         android:layout_height="134dp"
-        android:layout_marginTop="188dp"
-        android:layout_marginBottom="188dp"
         android:text="0"
         android:textSize="100dp"
         app:layout_constraintBottom_toTopOf="@+id/buttonContador"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tituloText"
-        app:layout_constraintVertical_bias="0.428" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonToast" />
 
     <Button
         android:id="@+id/buttonContador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="244dp"
+        android:layout_marginTop="212dp"
         android:text="Contador"
         android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textContador"
         app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="@+id/textContador" />
+        app:layout_constraintStart_toStartOf="@+id/textContador"
+        app:layout_constraintTop_toBottomOf="@+id/buttonToast" />
+
+    <Button
+        android:id="@+id/buttonToast"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TOAST"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.006" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
