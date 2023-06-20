@@ -40,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
         botoncontar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Integer numero = Integer.parseInt(textoContador.getText().toString()) ;
+                numero++;
+                textoContador.setText(numero.toString());
 
             }
         });
